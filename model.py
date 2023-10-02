@@ -3,6 +3,8 @@ import torch.nn as nn
 import math
 from einops import rearrange
 
+# data is of size [48, 128, 256] -> [samples, channels, channel_length]
+
 
 class AbsPosEnc(nn.Module):
     r"""Inject some information about the relative or absolute position of the tokens
